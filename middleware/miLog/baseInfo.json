@@ -1,0 +1,7 @@
+{
+  "appLogLevel": "debug",
+  "dir": "logs",
+  "env": "dev",
+  "projectName": "koa-practice",
+  "serverIp": "0.0.0.0"
+}
