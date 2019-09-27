@@ -4,62 +4,62 @@
 
 # 项目结构
 .
-├── app.js                       // 入口文件
-├── config                       // 配置文件(mysql和mongo等配置)
-│   └── config.js
-├── controller                   // router后controller
-│   ├── course.js
-│   ├── customer.js
-│   └── home.js
-├── errorPage
-│   ├── 400.html
-│   ├── 404.html
-│   ├── 500.html
-│   └── other.html
-├── LICENSE
-├── logs
-│   └── task.-2019-09-27.log
-├── middleware                   // 中间件示例(将中间件在此处统一管理)
-│   ├── corsRelated
-│   │   └── index.js
-│   ├── errorCatch
-│   │   └── index.js
-│   ├── index.js                 // 中间件入口文件
-│   ├── miHttpError
-│   │   ├── error.html
-│   │   └── index.js
-│   ├── miLog
-│   │   ├── access.js
-│   │   ├── baseInfo.json
-│   │   ├── index.js
-│   │   └── logger.js
-│   ├── miRule
-│   │   └── index.js
-│   ├── miSend
-│   │   └── index.js
-│   ├── mongoRelated
-│   │   └── index.js
-│   └── redisRelated
-│       └── index.js
-├── model                        // 模型(经过orm封装的数据库模型)
-│   ├── mongo
-│   │   ├── course.js
-│   │   └── index.js
-│   └── mysql
-│       ├── custom.js
-│       └── index.js
-├── package.json                 // 项目所需模块依赖文件
-├── package-lock.json
-├── public                       // 存放公共资源
-├── README.md                    // readme文档
-├── router.js                    // app后router(路由)(路由中将controller挂载到了app对象上，请查看miRule中间件)
-├── service                      // controller后service(进行数据库操作的逻辑)
-│   ├── course.js
-│   ├── customer.js
-│   └── home.js
-└── views                        // 后端需要渲染的视图
-    └── home
-        └── login.html
+├── app.js                       // 入口文件<br/>
+├── config                       // 配置文件(mysql和mongo等配置)<br/>
+│   └── config.js<br/>
+├── controller                   // router后controller<br/>
+│   ├── course.js<br/>
+│   ├── customer.js<br/>
+│   └── home.js<br/>
+├── errorPage<br/>
+│   ├── 400.html<br/>
+│   ├── 404.html<br/>
+│   ├── 500.html<br/>
+│   └── other.html<br/>
+├── LICENSE<br/>
+├── logs<br/>
+│   └── task.-2019-09-27.log<br/>
+├── middleware                   // 中间件示例(将中间件在此处统一管理)<br/>
+│   ├── corsRelated<br/>
+│   │   └── index.js<br/>
+│   ├── errorCatch<br/>
+│   │   └── index.js<br/>
+│   ├── index.js                 // 中间件入口文件<br/>
+│   ├── miHttpError<br/>
+│   │   ├── error.html<br/>
+│   │   └── index.js<br/>
+│   ├── miLog<br/>
+│   │   ├── access.js<br/>
+│   │   ├── baseInfo.json<br/>
+│   │   ├── index.js<br/>
+│   │   └── logger.js<br/>
+│   ├── miRule<br/>
+│   │   └── index.js<br/>
+│   ├── miSend<br/>
+│   │   └── index.js<br/>
+│   ├── mongoRelated<br/>
+│   │   └── index.js<br/>
+│   └── redisRelated<br/>
+│       └── index.js<br/>
+├── model                        // 模型(经过orm封装的数据库模型)<br/>
+│   ├── mongo<br/>
+│   │   ├── course.js<br/>
+│   │   └── index.js<br/>
+│   └── mysql<br/>
+│       ├── custom.js<br/>
+│       └── index.js<br/>
+├── package.json                 // 项目所需模块依赖文件<br/>
+├── package-lock.json<br/>
+├── public                       // 存放公共资源<br/>
+├── README.md                    // readme文档<br/>
+├── router.js                    // app后router(路由)(路由中将controller挂载到了app对象上，请查看miRule中间件)<br/>
+├── service                      // controller后service(进行数据库操作的逻辑)<br/>
+│   ├── course.js<br/>
+│   ├── customer.js<br/>
+│   └── home.js<br/>
+└── views                        // 后端需要渲染的视图<br/>
+    └── home<br/>
+        └── login.html<br/>
 
 # 项目运行
 ```
