@@ -6,7 +6,7 @@ module.exports = {
     ctx.type = jsonMIME;
     ctx.body = {
       status: 0,
-      data: await getCourseList()
+      data: await getCourseList(ctx)
     }
   },
 

@@ -18,7 +18,7 @@ module.exports = (app) => {
   router.delete('/customer/:id', app.controller.customer.deleteCustomer);  // 删除数据
 
   // course + mongodb相关示例代码接口
-  // app.use(mongoMiddleware());  // 根据需要选择该中间件以及放到适当的位置
+  // app.use(mongoMiddleware());  // 根据需要选择该中间件以及放到适当的位置(该处mongoMiddleware是一个指代，具体请看middle中对于mongo中间件的调用)
   router.get('/course', app.controller.course.getCourseList);  // 获取所有数据
   router.get('/course/:id', app.controller.course.getCourseById);  // 根据id查询数据
   router.post('/course', app.controller.course.addCourse);  // 新增数据

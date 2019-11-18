@@ -4,7 +4,7 @@ const views = require('koa-views');
 const staticFiles = require('koa-static');
 const miSend = require('./miSend');
 const errorCatch = require('./errorCatch');
-// const mongoRelated = require('./mongoRelated');
+const mongoRelated = require('./mongoRelated');
 const session = require('koa-session');
 const { sessionConfig } = require('../config/config');
 const corsRelated = require('./corsRelated');
@@ -54,5 +54,5 @@ module.exports = (app) => {
     ]
   });
 
-  // app.use(mongoRelated());  // 连接mongo相关中间件，使用数据库为mongo时需调用该中间件(该中间件在路由中进行调用也可以)
+  app.use(mongoRelated());  // 连接mongo相关中间件，使用数据库为mongo时需调用该中间件(该中间件在路由中进行调用也可以)
 }

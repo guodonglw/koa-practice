@@ -1,7 +1,7 @@
 const Course = require('../model/mongo/course');
 
 module.exports = {
-  getCourseList: async () => {
+  getCourseList: async (ctx) => {
     return await Course.find().sort({
       'startTime.time': 1
     })
